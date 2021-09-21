@@ -3,4 +3,7 @@
     <string name="enter_x">Enter X:</string>
     <string name="enter_y">Enter Y:</string>
     <string name="tv">Set coordinates</string>
+    <string name="enter_y_point">Enter Y point:</string>
+    <string name="enter_x_point">Enter X point:</string>
+    <string name="set_coordinates">Set coordinates</string>
 </resources>
