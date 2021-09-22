@@ -16,14 +16,13 @@ class Problema2 : AppCompatActivity() {
         val etThirdGrade = findViewById<EditText>(R.id.etThirdGrade)
         val btnCalculateAverage = findViewById<Button>(R.id.btnCalculateAverage)
 
-        val firstGrade = etFirstGrade.text.toString()
-        val secondGrade = etSecondGrade.text.toString()
-        val thirdGrade = etThirdGrade.text.toString()
-
 
         var average = 0.0
         var result = ""
         btnCalculateAverage.setOnClickListener {
+            val firstGrade = etFirstGrade.text.toString()
+            val secondGrade = etSecondGrade.text.toString()
+            val thirdGrade = etThirdGrade.text.toString()
             if (firstGrade.isNotEmpty() && secondGrade.isNotEmpty() && thirdGrade.isNotEmpty()){
                 val firstGradeDouble = etFirstGrade.text.toString().toDouble()
                 val secondGradeDouble = etSecondGrade.text.toString().toDouble()

@@ -18,10 +18,15 @@ class MainActivity : AppCompatActivity() {
         val etYPoint = findViewById<EditText>(R.id.etYPoint)
         val btnCalculate = findViewById<Button>(R.id.btnCalculate)
         //DEBUGGER: Al empeza está vacío
-        val xPoint = etXPoint.text.toString()
-        val yPoint = etYPoint.text.toString()
+
         //Aún escribiendo siempre está empty, núnca recoge nada, excepto una vez. Inconsistente
+        /*
+        Solucionado, no había asignación en el evento y siempre permanecían vacios
+        Esta estructura ha funcionado en el resto de Problemas de este tipo.
+        */
         btnCalculate.setOnClickListener{
+            val xPoint = etXPoint.text.toString()
+            val yPoint = etYPoint.text.toString()
             if (xPoint.isNotEmpty() && yPoint.isNotEmpty()){
                 val xPoint = etXPoint.text.toString().toInt()
                 val yPoint = etYPoint.text.toString().toInt()
